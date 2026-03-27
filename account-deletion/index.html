@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sentence Card Account Deletion</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Georgia, serif;
+        background: #faf6ef;
+        color: #17304a;
+      }
+      main {
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 48px 20px 80px;
+      }
+      h1, h2 {
+        line-height: 1.15;
+      }
+      p, li {
+        color: #4f5e6c;
+        line-height: 1.75;
+        font-size: 16px;
+      }
+      .back {
+        display: inline-block;
+        margin-bottom: 20px;
+        color: #c97b42;
+        text-decoration: none;
+        font-weight: 700;
+      }
+      ol, ul {
+        padding-left: 22px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <a class="back" href="../">← Back</a>
+      <h1>Sentence Card Account Deletion</h1>
+      <p>Last updated: 2026-03-27</p>
+
+      <h2>Current Status</h2>
+      <ul>
+        <li>Email OTP sign-in exists via Supabase.</li>
+        <li>Sign out exists in the app.</li>
+        <li>Full account deletion requires the backend deletion function to be deployed.</li>
+      </ul>
+
+      <h2>Required Production Behavior</h2>
+      <ul>
+        <li>Users can find account deletion from the account or settings area.</li>
+        <li>Users understand that deletion removes their account and associated personal data.</li>
+        <li>Users confirm deletion intentionally.</li>
+        <li>Deletion is completed through a real backend process.</li>
+      </ul>
+
+      <h2>Recommended Flow</h2>
+      <ol>
+        <li>Open the account screen in the app.</li>
+        <li>Tap <strong>Delete account</strong>.</li>
+        <li>Confirm the deletion request.</li>
+        <li>The backend securely deletes the signed-in user from Supabase.</li>
+      </ol>
+
+      <h2>Contact</h2>
+      <p>If you cannot access the app, contact: <code>replace-with-support-email@example.com</code></p>
+    </main>
+  </body>
+</html>
