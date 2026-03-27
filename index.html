@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sentence Card Support</title>
+    <style>
+      :root {
+        --bg: #f5efe4;
+        --panel: rgba(255, 255, 255, 0.7);
+        --ink: #17304a;
+        --muted: #5e6975;
+        --accent: #c97b42;
+        --line: rgba(23, 48, 74, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Georgia, "Noto Serif SC", serif;
+        background:
+          radial-gradient(circle at top right, rgba(201, 123, 66, 0.18), transparent 28%),
+          linear-gradient(180deg, #fbf7f0 0%, var(--bg) 100%);
+        color: var(--ink);
+      }
+
+      main {
+        max-width: 880px;
+        margin: 0 auto;
+        padding: 48px 20px 72px;
+      }
+
+      .hero,
+      .panel {
+        border: 1px solid var(--line);
+        background: var(--panel);
+        backdrop-filter: blur(10px);
+        border-radius: 28px;
+        box-shadow: 0 16px 40px rgba(23, 48, 74, 0.08);
+      }
+
+      .hero {
+        padding: 32px;
+        margin-bottom: 20px;
+      }
+
+      .eyebrow {
+        margin: 0 0 10px;
+        color: var(--accent);
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(36px, 6vw, 56px);
+        line-height: 1.04;
+      }
+
+      .hero p,
+      .panel p,
+      .panel li {
+        color: var(--muted);
+        font-size: 16px;
+        line-height: 1.7;
+      }
+
+      .grid {
+        display: grid;
+        gap: 18px;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      }
+
+      .panel {
+        padding: 24px;
+      }
+
+      h2 {
+        margin: 0 0 12px;
+        font-size: 24px;
+      }
+
+      a {
+        color: var(--ink);
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      ul {
+        padding-left: 20px;
+        margin: 12px 0 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <p class="eyebrow">Sentence Card</p>
+        <h1>Support & Legal</h1>
+        <p>
+          单句卡片的公开支持页面。这里提供隐私政策、账号删除说明，以及上架审核所需的公开链接入口。
+        </p>
+      </section>
+
+      <section class="grid">
+        <article class="panel">
+          <h2>Privacy Policy</h2>
+          <p>用于 App Store Connect 的 Privacy Policy URL。</p>
+          <a href="./privacy/">Open privacy policy</a>
+        </article>
+
+        <article class="panel">
+          <h2>Account Deletion</h2>
+          <p>用于说明账号删除路径和处理方式。</p>
+          <a href="./account-deletion/">Open account deletion guide</a>
+        </article>
+
+        <article class="panel">
+          <h2>Support</h2>
+          <p>发布前请把支持邮箱替换为你的真实联系地址。</p>
+          <ul>
+            <li>Email: <code>replace-with-support-email@example.com</code></li>
+            <li>App name: 单句卡片</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
